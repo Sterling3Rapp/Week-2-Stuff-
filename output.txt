@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head id="Head1"><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" /><title>
+	
+    Sheriff's Office | Cecil County
+
+</title>
+    <script type="text/javascript">
+        //script for making "view full site" button work on mobile devices 
+        function getCookie(c_name) {
+            var i, x, y, ARRcookies = document.cookie.split(";");
+            for (i = 0; i < ARRcookies.length; i++) {
+                x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+                y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+                x = x.replace(/^\s+|\s+$/g, "");
+                if (x == c_name) {
+                    return unescape(y);
+                }
+            }
+        }
+
+        function setCookie(c_name, value, exdays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+            c_value = (window.location.protocol == 'https:') ? c_value + "; secure" : c_value;
+            document.cookie = c_name + "=" + c_value;
+        }
+
+        var isResponsive = getCookie('ISRESPONSIVE');
+        if (isResponsive != "no" && isResponsive != "yes") {
+            setCookie('ISRESPONSIVE', 'yes', 7);
+            document.write('<meta name="viewport" content="width=device-width" />');
+            isResponsive = 'yes';
+        } else {
+            if (isResponsive == "no") {
+                document.write('<meta name="viewport" content="width=980" />');
+            }
+            else {
+                document.write('<meta name="viewport" content="width=device-width" />');
+            }
+        }
+    </script>
+
+    <link href="/DefaultContent/Default/StyleBundleDesignTheme.cssbnd?v=thE6kwUbL_IA1S-rm3y1R1tIGsYif2o6xe5RLw076Ys1" rel="stylesheet"/>
+<link href="/Project/Contents/Main/StyleBundleDesignTheme.cssbnd?v=7QXyzEG9W6jMVI0gAxYc-IQxzrDIDQkUnN8FJ5_Wt1Y1" rel="stylesheet"/>
+<link href="/Areas/Admin/Content/StyleBundleFrontendExtra.cssbnd?v=-cG6bfciEzyG0pVpDdXAbInOUnqKuoiK61z7_e6NMxo1" rel="stylesheet"/>
+<link href="/DefaultContent/Default/Print.cssbnd?v=LagRFhur4RMxiqMN2QR0jEYqBcqJfKB2ZqfNph75L3A1" rel="stylesheet" media="print" />
+<link href="/Project/Contents/Main/Print.cssbnd?v=EkBhuDY1zhWCGk7Ki-E7KB_hGJND-0mPnvrmUCdi-oc1" rel="stylesheet" media="print" />
+<link href="/DefaultContent/Default/kendo/StyleBundleKendo.cssbnd?v=xST1bsl5yknXpl9jp1HsezLGTLBh6mO_aQWPARk7ONM1" rel="stylesheet"/>
+<script src="/Scripts/ScriptBundleFAllInOne.jsbnd?v=vPvLN-Yigy2mTKrHCq_QQ3et-U4hdLohYoAzlc3biqA1"></script>
+
+<script>
+    function handleExternalURL() { };
+</script>
+<script>window.visionOptions = {virtualApplicationPath:'/',logOnPath:'Admin/LogOn',logOffPath:'Admin/LogOff',enableSessionTimeout:false,sessionTimeoutInMinutes:60,timeToAlertBeforeSessionTimeoutInMinutes:5,extendSessionTimeoutPath:'Admin/Account/ExtendSessionTimeout',mainFolderPath:'/Project/Contents/Main/',centerLocation:'Elkton, MD', siteID:1, navigationID:1701, isHomePage:false, emergencyNoticeChanged:false, loggedIn:false, showTopTips:true, currentDesignFolderPath:'/Project/Contents/Main/', useDesignThemFontSizeCss:false , clientResponsiveTableEnabled:true, imageUrl:'/Home/ShowImage?id=', engagementAdminEndPoint:'/Admin/Engagement/', visionLiveAdminEndPoint:'/Admin/Components/', cmsAdminEndPoint:'/Admin/' };;window.visionApps={"cms_core":{"DateFormat":"MM/dd/yyyy","TimeFormat":"h:mm tt","PhoneFormat":"(999) 999-9999","OrganizationName":"Cecil County","GoogleReCaptchaPublicKey":"6LfD_hgUAAAAAHPhLzmYTQReOp5mspjlIxKQ1y-H","GoogleReCaptchaPrivateKey":"6LfD_hgUAAAAAJxD59VxieU2e9Bd1Q2otE-8-tpy"}};;window.visionApps.token="eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwiayI6InRTbkhsQ1Ird1c2WkxhcExOb0l1a1E9PSJ9.k3aUoanHcyhhbWFIBW8cWs5IFzo2Olpk5N8JF7spStaNF6umfwOPSrVxQEQjXONDbKyMjsmMw-9PrNPZk2TMjnshIwdcWSSv.myr-SGu_nTWpnJ-SMm8F9A.yeI_VfU2kMU1FN7cBourYYH_AQrtNFlEWQOgx-BXVOpkHvANCoOB2g3rAkRi4yg4OluJTtXv2_uEzq8ZUvmcH9pse1lHTwcQnVzf5NoVxb4t5lNl0hpuuMXgdoyhemTOkt7VFkwicTytX1Ngf1Z5Kq42lnnM97Kyyuh5rZpMUm104zuumV62U-BAjvS62L8SKZWRHDc-dRALjyROC3dR0W197yr1LQzPlCc2xTSU-BU.ckPwfgBbtGAWmtWtP2fjhykH9W_XnUwErzwveCOIiYg";</script>
+
+    <script type="text/javascript">
+        // added the htmlEncode and htmlDecode method to fixed the js load order issue.
+        $.extend($, {
+            htmlEncode: function (html) {
+                var temp = document.createElement("div");
+                (temp.textContent != undefined) ? (temp.textContent = html) : (temp.innerText = html);
+                var output = temp.innerHTML;
+                temp = null;
+                return output;
+            },
+            htmlDecode: function (text) {
+                var temp = document.createElement("div");
+                temp.innerHTML = text;
+                var output = temp.innerText || temp.textContent;
+                temp = null;
+                return output;
+            }
+        });
+
+        //script for view full site button, placed here to keep firefox for mobile devices happy
+        $(function () {
+            var viewFullElement = document.getElementById("view-full");
+            if (viewFullElement) {
+                if (isResponsive == "yes") {
+                    viewFullElement.className = 'mobile_only fullsite';
+                }
+                else {
+                    viewFullElement.innerHTML = 'View Mobile Optimized';
+                    viewFullElement.className = '';
+                }
+            }
+        });
+    </script>
+    
+
+    <!--[if lt IE 9]>
+        <script src="/Scripts/ScriptBundleOthers.jsbnd?v=3Q7FhTQfRrKx8h7Kvdbh9bBluzlNlXKsFAERd4g8_TY1"></script>
+
+	<![endif]-->
+
+    
+    
+    
+    
+    <link id="active_font" rel="stylesheet" type="text/css" href="/Project/Contents/Main/x-small.css">
+    
+    <link rel="Shortcut Icon" href="/favicon.ico" />
+
+    
+    
+
+<!-- Google Universal Analytics -->
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-69424803-1', 'auto');
+    ga('require', 'displayfeatures');
+    //TFS 21771, Enhanced Link Attribution, https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-link-attribution
+    ga('require', 'linkid'); 
+    ga('set', 'dimension1', 'Sheriff&#39;s Office, ID:1701');
+    ga('set', 'dimension2', '2017');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Universal Analytics -->
+
+      
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+<meta name="google-site-verification" content="OAG3Y0Qb2cTP9h8kA1jYXC0dGw1pLUJ3dR0QeIixMDk" /></head>
+
+<body class="front_end_body site_standardsitetemplate ">
+    <link href="/DefaultContent/Default/StyleBundleAngularLib.cssbnd?v=sED2Qjf38ysQJYZW_ZvZj-7IGXKm4NOJhdA51oOtG5A1" rel="stylesheet"/>
+
+<script src="/Scripts/ScriptBundleAngularLib.jsbnd?v=tGBL15R0DOD4q4WyxhlQVEPHoz0NZ7g4VVdWaIn7RNo1"></script>
+
+<script>
+    (function (window, angular) {
+        
+        $("body").attr("ng-app", "vi.cms");
+        
+        window.viCurrentModule = angular.module("vi.cms", []);
+    })(window, angular)
+</script>
+
+<script>
+    window.frontendCommonConfig = {
+        loginPage: 'http://www.ccgov.org/sys/sso/login',
+        photoBaseUrlForPeople: 'http://www.ccgov.org/sys/sso/ShowProfilePhoto?id=',
+        photoBaseUrl: 'http://www.ccgov.org/Home/ShowImage?id=',
+        token: window.visionApps ? window.visionApps.token : '',
+        cmsUserLogged: false,
+        anonymousAvatar: 'http://www.ccgov.org/DefaultContent/Default/_gfx/anonymous.png',
+        loginUser: {
+            name: '',
+            avatar: '',
+            userID: null,
+            firstName: '',
+            lastName: '',
+            imageID: null,
+            email: '',
+        }
+    };
+
+</script>
+
+
+    
+    <!--stopindex-->
+    <noscript>
+        <div class="noscript_alert"><span>Please enable JavaScript in your browser for a better user experience.</span></div>
+    </noscript>
+    <!--startindex-->
+    <div class="vi-temp-message-container" style="display:none;"></div>
+
+
+    
+    
+
+<div class="sitewrapper site_template mainSpan_wrapper">
+    <div class="mainSpan" id="mainSpan_wrapper_Screen">
+        <!--stopindex-->
+        <div id="skipnav">
+            <a href="#pagebody">
+                <img alt="Skip to page body" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Home" href="/home">
+                <img alt="Home" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Services" href="/services">
+                <img alt="Services" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="About Us" href="/about-us">
+                <img alt="About Us" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Government" href="/government">
+                <img alt="Government" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Residents" href="/residents">
+                <img alt="Residents" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Visitors" href="/visitors">
+                <img alt="Visitors" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Businesses" href="/businesses">
+                <img alt="Businesses" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="I Want to..." href="/i-want-to">
+                <img alt="I Want to..." src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+        </div>
+        <!--startindex-->
+
+        <header id="siteheader" class="">
+            <!--stopindex-->
+			<h1 class="wcag_only">Cecil County</h1>
+            <a id="home_link" href="/home">Home</a>
+            
+            <a class="menu_trigger mobile_only" href="javascript:void(0);">Menu</a>
+            
+            <!--startindex-->
+            
+<div id="headercolumn" class="site_template_column  header_column   " >
+
+                <!--stopindex-->
+                
+<div id="top_nav">
+
+		<a href="/home" target="_self">Home</a>		
+		<a href="https://cecilco.munisselfservice.com/employmentopportunities/default.aspx" target="_blank">Job Opportunities</a>		
+		<a href="/about-us/contact-directory-1673" target="_self">Contact Us</a>		
+		<a href="/services/employee-portal-home" target="_self">Portal</a>		
+
+	<a href="http://translate.google.com/translate?js=y&prev=_t&hl=en&ie=UTF-8&layout=1&eotf=1&sl=en&tl=es&u=http%3a%2f%2fwww.ccgov.org%2fgovernment%2fsheriff-s-office-1701" target="_blank">Translate</a>		
+</div>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                <div id="searchbox" class="clearfix">
+	<label style="display: none;" for="search_text">Search</label>
+	<input type="text" title="Search..."  id="search_text" placeholder="Search..."/>		
+	<a href="javascript:void(0);">Go</a>
+</div>
+	<script>
+		    $(document).ready(function () {
+       			 $("#search_text").focusin(function () {
+			            $(this).parent('#searchbox').addClass('active');
+			        });		
+
+			        $("#search_text").focusout(function () {			
+					var searchContainer =   $(this).parent('#searchbox');
+					setTimeout(function () {      	
+         					searchContainer.removeClass('active');         
+					}, 800);	
+			        });		
+
+			});
+	    $(function () {
+	        $("#searchbox input").keydown(function (e) {
+	            if (e.keyCode == 13) {
+	                $("#searchbox a").click();
+	            }
+	        });
+	        $("#searchbox a").click(function () {
+	            var keyWord = $("#searchbox input#search_text").val();
+	            if (keyWord.length <= 0) { return false; }
+	            keyWord  = keyWord.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+	            keyWord = encodeURIComponent(keyWord.replace("<"," ").replace(">"," ") );
+	            var link = '/services/search';
+	            if (link.indexOf("?") >= 0 )
+	                link = link + "&q=" + keyWord;
+	            else
+	                link = link + "?q=" + keyWord;
+	            window.location.href = link;
+	        });
+	    });
+	</script>
+                <!--startindex-->
+            
+
+</div>
+
+        </header>
+
+        
+<div class="standardthreecolumnlayout clearfix" id="sitebody">
+    
+<div id="ColumnUserControl1" class="column   top_col clearfix  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="457"WidgetStart!!-->
+
+                <!--stopindex-->
+                <div class=" main_menu_widget"><link href="/DefaultContent/Default/StyleBundleMegaMenuDropDown.cssbnd?v=CD_eN-fYJU8KKPigt6x-Ey-z8_WTsoZ7bqx2pLTZtXU1" rel="stylesheet"/>
+<link href="/Project/Contents/Main/StyleBundleMegaMenuDropDown.cssbnd?v=yc6HXk2tofUr5PVLEb2MB40nViZCWJ-a8U5_eEvxXDU1" rel="stylesheet"/>
+<nav class="regularmegamenu mainnav" id="menuContainer_457_0_3373"><ul class="dropdownmenu clearfix"><li class="megamenu_first" id="dropdownrootitem1"><a class="dropdownrootitem1" href="/home" title="Home" data-navid="1" >Home</a></li><li class="megamenu_first" id="dropdownrootitem2"><a class="dropdownrootitem2" href="/services" title="Services" data-navid="2" >Services</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/addiction-services" title="Addiction Services" data-navid="2762" >Addiction Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/bids-and-proposals" title="Bids and Proposals" data-navid="63" target="_self">Bids and Proposals</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/community-services-resource-directory" title="Community Services &amp; Resource Directory" data-navid="1668" target="_self">Community Services &amp; Resource Directory</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/employment" title="Employment" data-navid="65" target="_self">Employment</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/enotification" title="eNotification" data-navid="43" >eNotification</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/forms-and-permits" title="Forms and Permits" data-navid="61" >Forms and Permits</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/housing-counseling-services" title="Housing Counseling Services" data-navid="2913" target="_self">Housing Counseling Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/online-services" title="Online Services" data-navid="62" >Online Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/services/property-taxes-utility-bills" title="Property Taxes / Utility Bills" data-navid="64" target="_self">Property Taxes / Utility Bills</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/rental-subsidy-program" title="Rental Subsidy Programs" data-navid="2914" target="_self">Rental Subsidy Programs</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem3"><a class="dropdownrootitem3" href="/about-us" title="About Us" data-navid="3" >About Us</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/county-calendar" title="County Calendar" data-navid="20" >County Calendar</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/county-code" title="County Code" data-navid="108" target="_self">County Code</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/contact-directory-1673" title="Contact Directory" data-navid="1673" >Contact Directory</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/county-news" title="County News" data-navid="18" >County News</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/government-structure" title="Government Structure" data-navid="68" >Government Structure</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/hours-of-operation" title="Hours of Operation" data-navid="2780" >Hours of Operation</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/municipalities" title="Municipalities" data-navid="110" >Municipalities</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/strategic-plan" title="Strategic Plan" data-navid="69" >Strategic Plan</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/vision-mission-statement" title="Vision &amp; Mission Statement" data-navid="66" >Vision &amp; Mission Statement</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/accessibility-compliance" title="Accessibility &amp; Compliance" data-navid="2887" >Accessibility &amp; Compliance</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem4"><a class="dropdownrootitem4" href="/government" title="Government" data-navid="4" >Government</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/government/office-of-the-county-executive" title="Office of the County Executive" data-navid="70" >Office of the County Executive</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/county-council" title="County Council" data-navid="73" >County Council</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/meetings-and-agendas" title="Meetings and Agendas" data-navid="58" >Meetings and Agendas</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/boards-and-commissions" title="Boards and Commissions" data-navid="90" >Boards and Commissions</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/budget" title="Budget" data-navid="115" >Budget</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/animal-services" title="Animal Services" data-navid="114" >Animal Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/circuit-court-court-commissioners" title="Circuit Court/Court Commissioners" data-navid="111" target="_blank">Circuit Court/Court Commissioners</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/government/community-services" title="Community Services" data-navid="116" >Community Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/economic-development" title="Economic Development" data-navid="132" >Economic Development</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/election-board" title="Election Board" data-navid="165" >Election Board</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/emergency-services" title="Emergency Services" data-navid="174" target="_blank">Emergency Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/facilities-maintenance" title="Facilities Maintenance" data-navid="175" >Facilities Maintenance</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/finance" title="Finance" data-navid="176" >Finance</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/health-department" title="Health Department" data-navid="202" target="_blank">Health Department</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/government/human-resources" title="Human Resources" data-navid="203" >Human Resources</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/information-technology" title="Information Technology" data-navid="206" >Information Technology</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/land-use-development-services" title="Land Use &amp; Development Services" data-navid="2792" >Land Use &amp; Development Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/liquor-board" title="Liquor Board" data-navid="211" >Liquor Board</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/orphans-court" title="Orphans&#39; Court" data-navid="112" >Orphans&#39; Court</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/parks-and-recreation" title="Parks and Recreation" data-navid="219" >Parks and Recreation</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/public-works" title="Public Works" data-navid="278" >Public Works</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/government/purchasing" title="Purchasing" data-navid="304" >Purchasing</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/register-of-wills" title="Register of Wills" data-navid="307" target="_blank">Register of Wills</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/sheriff-s-office-1701" title="Sheriff&#39;s Office" data-navid="1701" >Sheriff&#39;s Office</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/social-services" title="Social Services" data-navid="379" target="_blank">Social Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/soil-conservation" title="Soil Conservation" data-navid="2744" target="_blank">Soil Conservation</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/state-s-attorney-s-office" title="State&#39;s Attorney&#39;s Office" data-navid="308" >State&#39;s Attorney&#39;s Office</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/tourism" title="Tourism" data-navid="1657" >Tourism</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem5"><a class="dropdownrootitem5" href="/residents" title="Residents" data-navid="5" >Residents</a><div class="megamenu_container widthcontainer4col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/animal-services" title="Animal Services" data-navid="388" target="_self">Animal Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/current-road-bridge-closures" title="Current Road &amp; Bridge Closures" data-navid="395" target="_self">Current Road &amp; Bridge Closures</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/forms-and-permits" title="Forms and Permits" data-navid="386" target="_self">Forms and Permits</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/meetings-and-agendas" title="Meetings and Agendas" data-navid="381" target="_self">Meetings and Agendas</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/online-services" title="Online Services" data-navid="387" target="_self">Online Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/parks-and-recreation" title="Parks and Recreation" data-navid="389" target="_self">Parks and Recreation</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/about-us/county-news-copy" title="County News" data-navid="1656" >Press Releases</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/property-taxes-utility-bills" title="Property Taxes / Utility Bills" data-navid="384" target="_self">Property Taxes / Utility Bills</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/transit-bus-schedules" title="Transit Bus Schedules" data-navid="2751" target="_self">Transit Bus Schedules</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/solid-waste" title="Solid Waste &amp; Recycling" data-navid="2860" target="_self">Solid Waste &amp; Recycling</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/residents/waste-water" title="Waste Water" data-navid="2861" target="_self">Waste Water</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem6"><a class="dropdownrootitem6" href="/visitors" title="Visitors" data-navid="6" >Visitors</a><div class="megamenu_container widthcontainer2col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/visitors/parks-and-recreation" title="Parks and Recreation" data-navid="396" target="_self">Parks and Recreation</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/visitors/tourism" title="Tourism" data-navid="1662" target="_self">Tourism</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem7"><a class="dropdownrootitem7" href="/businesses" title="Businesses" data-navid="7" >Businesses</a><div class="megamenu_container widthcontainer2col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/businesses/economic-development" title="Economic Development" data-navid="461" target="_self">Economic Development</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/businesses/land-use-development-services" title="Land Use &amp; Development Services" data-navid="414" target="_self">Land Use &amp; Development Services</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem8"><a class="dropdownrootitem8" href="/i-want-to" title="I Want to..." data-navid="8" >I Want to...</a></li></ul><script>
+$(function () {
+ var menuContainer = $('#menuContainer_457_0_3373')
+ $(".dropdownmenu a[data-navid='1701']", menuContainer).closest('.dropdownmenu>li').addClass('active');
+});
+</script></nav></div>
+
+
+<script>
+    /**********************************************************
+    Dropdown Menu delay disappearance on mouse out
+    *********************************************************/
+    /*javascript to delay the disappearance of the menu when the user mouses out.  Uses jquery library.*/
+    $(function () {
+        
+
+        var timer = null;
+        var delay = 800; //change this number for shorter or longer delay
+
+        
+        //using megamenu
+        var dropdowncontainer = '>.megamenu_container';
+        var activePage = $(".mainnav .dropdownmenu > li.active");
+        $(".mainnav > .dropdownmenu > li").hoverIntent(
+
+            //what happens on hover over
+             function () {
+                 //end timer and stop hiding if they are mousing back in.
+                 if (timer != null) {
+                     clearTimeout(timer);
+                     timer = null;
+                 }
+                 // Find the hovered menu's sub-menu
+                 var $menu = $(this);
+                 var $submenu = $(this).find(dropdowncontainer);
+
+                 // hide any other submenus that are open
+                 $('.mainnav > .dropdownmenu>li' + dropdowncontainer).not($submenu).css('display', 'none');
+                 $('.mainnav > .dropdownmenu li.active').not($menu).not(activePage).removeClass('active');
+
+                 // show current menu
+                 $submenu.css('display', 'block');
+                 $menu.addClass('active');
+             },
+
+            //what happens on mouse out
+            function () {
+                var $submenu = $(this).find(dropdowncontainer);
+                var $menu = $(this);
+                // delay disappearance
+                var mouseDelay = $(this).data("mouseDelay") || delay;
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    $submenu.css('display', 'none'); $menu.not(activePage).removeClass('active');
+                    clearTimeout(timer); timer = null;
+                }, mouseDelay);
+            }
+        );
+        
+    });
+</script>
+
+<script>
+    //$(function () 
+    {
+        var menuContainerID = "menuContainer_457_0_3373";
+        var menuContainer = $("#" + menuContainerID);
+        
+        function isIE(userAgent) {
+            userAgent = userAgent || navigator.userAgent;
+            return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1;
+        }
+
+        function isIE9(userAgent) {
+            userAgent = userAgent || navigator.userAgent;
+            return userAgent.indexOf("MSIE 9") > -1;
+        }
+
+        function isTouchScreenEvent(event) {
+            var _isTouchScreen = false;
+            if ("ontouchstart" in window) {
+                _isTouchScreen = true;
+            } else if ("onpointerdown" in window) {
+                _isTouchScreen = event.originalEvent.pointerType == "touch";
+            } else if (window.MSPointerEvent) {
+                _isTouchScreen = event.originalEvent.pointerType == event.originalEvent.MSPOINTER_TYPE_TOUCH; // 2 ; http://blogs.msdn.com/b/ie/archive/2011/09/20/touch-input-for-ie10-and-metro-style-apps.aspx
+            } else {
+            }
+            return _isTouchScreen;
+        }
+
+        var _isIE = isIE();
+        var _isIE9 = isIE9();
+        var isMegaMenu = $('.megamenu_first', menuContainer).length > 0;
+        var currentMenu = $('> ul.dropdownmenu > li.active', menuContainer);
+
+        $(function () {
+            if (currentMenu.length == 0)
+                currentMenu = $('> ul.dropdownmenu > li.active', menuContainer);
+        });
+
+        if (("ontouchstart" in window   // Chrome & Safari (IOS) && Firefox
+         || "onpointerdown" in window   // IE 11 
+         || window.MSPointerEvent       // IE 10
+         ) && ($(window).width() > 648)) {
+            var eventName = "ontouchstart" in window ? "touchstart"
+                          : "onpointerdown" in window ? "pointerdown"
+                          : window.MSPointerEvent ? "MSPointerDown"
+                          : "";
+            if (eventName.length > 0) {                
+                $('> ul.dropdownmenu  li>a[data-navid]', menuContainer).bind(eventName, function (event) {
+                    
+                    if (isTouchScreenEvent(event) == false) {
+                        return true;
+                    }
+    
+                    var currentLevelAnchor = $(this);
+                    var currentLeveLi = currentLevelAnchor.closest("li");
+                    var firstLevelLi = currentLevelAnchor.closest("li[id^='dropdownrootitem']");
+                    var firstLevelAnchor = firstLevelLi.find(">a[data-navid]");
+                    var inFirstLevel = currentLevelAnchor[0] == firstLevelAnchor[0];
+
+                    var hasSubMenu = currentLevelAnchor.next("ul,div").length > 0;
+                    if (hasSubMenu) {
+                        $(this).closest("li").data("mouseDelay", 1);
+
+                        // Menu is not selected
+                        if (!firstLevelLi.hasClass('touch-active')) {                
+                            if ($(this).attr("href")) {
+                                $(this).attr("data-href", $(this).attr("href"));
+                                $(this).attr("href", "javascript:void(0);");
+                            }
+                            $(menuContainer).find('.touch-active').removeClass('touch-active').not(currentMenu).removeClass('active');                           
+                            
+                            firstLevelLi.addClass('touch-active active');
+                            currentLevelAnchor.addClass('touch-active active');
+                            currentMenu.addClass("active");
+
+                            $(' li:not(.touch-active)', menuContainer).not(firstLevelLi).removeClass('_current');    
+                            $(' li:not(.touch-active) li', menuContainer).not(currentLeveLi).removeClass('_current');
+
+                            $('> ul.dropdownmenu > li:not(.touch-active) > a[data-navid]', menuContainer).next().css('display', 'none');
+                            $('> ul.dropdownmenu > li.touch-active > a[data-navid]', menuContainer).next().css('display', 'block');
+
+                            event.preventDefault();
+                        }
+                            // Menu is selected
+                        else {
+                            if (inFirstLevel) {
+                                // non clickable
+                                if (currentLevelAnchor.attr('href') == undefined) {
+                                    //has class touch-active and no link
+                                    removeClassAndHideMenu();
+                                    event.preventDefault();
+                                } else if ($(this).attr("data-href")) { //clickable, but href have been moved to data.
+                                    $(this).attr("href", $(this).attr("data-href"));
+                                }
+                            }
+                            else {
+                                if (isMegaMenu)
+                                    return true;
+
+                                if (!currentLeveLi.hasClass('touch-active')) {
+                                    if ($(this).attr("href")) {
+                                        $(this).attr("data-href", $(this).attr("href"));
+                                        $(this).attr("href", "javascript:void(0);");
+                                    }
+                                    $(firstLevelLi).find('.touch-active').removeClass('touch-active').not(currentMenu).removeClass('active');
+                                    currentLeveLi.parent().children("li._current").removeClass("_current");
+                                    currentLeveLi.addClass('touch-active active _current');
+
+                                    currentLevelAnchor.addClass('touch-active active');
+
+                                    //$(' li:not(.touch-active)', menuContainer).not(firstLevelLi).removeClass('_current');    
+                                    //$(' li:not(.touch-active) li', menuContainer).not(currentLeveLi).removeClass('_current');
+
+                                    $(' li:not(.touch-active) > a[data-navid]', currentLeveLi.parent()).next().css('display', 'none');
+                                    $('> li.touch-active > a[data-navid]', currentLeveLi.parent()).next().css('display', 'block');
+
+                                    event.preventDefault();
+                                } else {
+                                    if (currentLevelAnchor.attr('href') == undefined) {
+                                        //has class touch-active and no link
+                                        removeClassAndHideMenu();
+                                        event.preventDefault();
+                                    } else if ($(this).attr("data-href")) {
+                                        $(this).attr("href", $(this).attr("data-href"));
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                });
+            }
+        }
+
+        
+
+        function removeClassAndHideMenu() {
+            $(menuContainer).find('a.touch-active, li.touch-active').removeClass('touch-active active');
+            $('> ul.dropdownmenu > li > a[data-navid]', menuContainer).next().css('display', 'none');
+            // If we don't change the menu item, we should keep the old one.
+            if ($('> ul.dropdownmenu > li.active', menuContainer).length == 0) {
+                currentMenu.addClass("active");
+            }
+        }
+
+        $('body').bind(eventName, function (event) {
+            if (isTouchScreenEvent(event) == false) {
+                return true;
+            }
+            if (!$(event.target).closest('li.touch-active').length) {
+                removeClassAndHideMenu();
+            }
+        });
+    }
+    //);
+</script>
+                
+                <!--startindex-->
+                <!--!!WidgetEnd-->
+
+    
+</div>
+
+    
+<div id="ColumnUserControl2" class="column   left_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="458"WidgetStart!!-->
+
+                <!--stopindex-->
+                
+
+<nav id='leftNav_458_0_3373' class='nocontent sidenav mobile_list   '>
+    <h2 class="mobile_only mobile_header">Jump to subpage...</h2>
+    <ul><li class="sidenav_current sidenav_expanded sidenav_haschildren"><a href='http://www.ccgov.org/government/sheriff-s-office-1701' >Sheriff&#39;s Office</a><ul><li><a href='http://www.ccgov.org/government/sheriff-s-office/contact-us' >Contact Us</a></li><li class="sidenav_haschildren"><a href='http://www.ccgov.org/government/sheriff-s-office/community-corrections' >Community Corrections</a></li><li class="sidenav_haschildren"><a href='http://www.ccgov.org/government/sheriff-s-office/detention-center' >Detention Center</a></li><li class="sidenav_haschildren"><a href='http://www.ccgov.org/government/sheriff-s-office/law-enforcement' >Law Enforcement</a></li><li class="sidenav_haschildren"><a href='http://www.ccgov.org/government/sheriff-s-office/employment' >Employment</a></li><li><a href='http://www.ccgov.org/government/sheriff-s-office/fingerprinting-services' >Fingerprinting Services</a></li><li><a href='http://www.ccgov.org/government/sheriff-s-office/history' >History</a></li><li><a href='http://www.ccgov.org/government/sheriff-s-office/collective-bargaining-agreement' >Collective Bargaining Agreement</a></li><li><a href='http://www.ccgov.org/government/sheriff-s-office/policy-procedures' >Policy &amp; Procedures</a></li><li><a href='http://www.ccgov.org/government/sheriff-s-office/quick-links' >Quick Links</a></li></ul></li></ul>
+</nav>
+
+                
+                <!--startindex-->
+                <!--!!WidgetEnd-->
+
+    
+</div>
+
+    <div class="column right_col">
+        
+<div id="ColumnUserControl3" class="column   banner_col clearfix  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="463"WidgetStart!!-->
+<div class=" image_widget" id="widget_463_0_3373"><a href="javascript:void(0);" target="_self" title="" target="_self">
+	<img class="img_item" src="/Home/ShowImage?id=2308&amp;t=636117819791670000" alt="" />
+</a></div> 
+            <!--!!WidgetEnd-->
+
+    
+</div>
+    
+        
+<div id="ColumnUserControl4" class="column   has_small_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="462"WidgetStart!!-->
+<div id='widget_462_3470_3373' class='content_area normal_content_area clearfix  '><p>
+<table style="width: 100%; float: left;" class="tableData">
+    <tbody>
+        <tr>
+            <td class="tableData" colspan="2" style="background-color: rgb(0, 0, 0); text-align: center; vertical-align: middle;">
+            <h2 style="text-align: center;">Welcome to the Cecil County Sheriff's Office Website&nbsp;</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="tableData" style="text-align: center; vertical-align: top;">
+            <p style="text-align: justify;">It is an honor to welcome you to the Cecil County Sheriff's Office website. As Sheriff, you have my solemn oath that my team of law enforcement professionals will work hand in hand with the communities we serve to make Cecil County a great place to live, work, and raise a family. The Sheriff's Office is the primary law enforcement agency for the citizens of Cecil County and as such I will always hold myself and every member of this agency to the highest levels of service and integrity. Please take the time to look around our page for the information that you need. You can also find out more about the Sheriff's Office on our<br>
+            <a href="https://www.facebook.com/CecilSheriff/" target="_blank">Cecil County Sheriff's Office</a>&nbsp;Facebook&nbsp;page.<br>
+            We can always be reached by telephone at<br>
+            410-996-5500.</p>
+            </td>
+            <td class="tableData" style="text-align: center; vertical-align: top;">
+            <p><img src="/Home/ShowImage?id=1254&t=636101275643170000" alt="Sheriff Scott Adams" class="tableData" style="margin-left: 10px; border-width: 3px; border-style: solid; border-color: rgb(0, 0, 0); vertical-align: top;"></p>
+            <p><em><strong><br>
+            Sheriff Scott A. Adams</strong></em></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<br>
+<table class="tableData" style="float: left;">
+    <tbody>
+        <tr>
+            <td class="tableData" style="text-align: center; background-color: rgb(0, 0, 0);" colspan="2"><span style="color: rgb(255, 255, 255);"><strong>DIVISIONS</strong></span></td>
+        </tr>
+        <tr>
+            <td class="tableData" style="width: 33%; text-align: center;"><strong><em>
+            <p style="text-align: center;"><img class="tableData" style="border: 3px solid rgb(0, 0, 0); width: 125px; height: 186px; vertical-align: top;" alt="Widdoes_Gerald" src="/Home/ShowImage?id=2306&t=636117806247500000"></p>
+            </em></strong><em>Chief Deputy<br>
+            Gerald Widdoes</em>&nbsp;</td>
+            <td class="tableData" style="text-align: left; vertical-align: top;">
+            <h3 align="left">Law Enforcement</h3>
+            <p align="left">The men and women of the Cecil County Sheriff's Office are committed to dedicated service through superior performance. Their accomplishments and contributions to the Cecil County Sheriff's Office are part of the fabric of an agency, which epitomizes the best in law enforcement.<strong><em>&nbsp;</em></strong></p>
+            <h3 align="left">Community Corrections</h3>
+            <p align="left">The purpose of the Center is to house and rehabilitate individuals who have been convicted of a crime but who, in the judgment of the Court and appropriate Correctional Personnel, can participate in community activities such as employment and rehabilitation programs without posing a substantial danger to the community.<br>
+            <br>
+            </p>
+            <h3 align="left">Detention Center</h3>
+            <p align="left">As a division of the Sheriff’s Office, the Detention Center’s mission is to provide a clean, safe and secure place of confinement for persons committed or adjudicated to our facility by proper authority of law.&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: left; margin-left: 360px;"><strong><em><br>
+<br>
+</em></strong></p>
+<p align="left">&nbsp;</p>
+<table class="tableData" style="width: 100%;">
+    <tbody>
+        <tr>
+            <td class="tableData" style="text-align: center; vertical-align: top; background-color: rgb(0, 0, 0);"><span style="color: rgb(255, 255, 0);"><em><strong>Stay connected with the Cecil County Sheriff's Office...</strong></em></span>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="tableData" style="text-align: center; vertical-align: top; background-color: rgb(146, 205, 220);">&nbsp;<iframe width="400" height="275" src="https://local.nixle.com/signup/widget/i/949"></iframe><br>
+            <a href="http://www.nixle.com/" target="_blank"><span style="color: rgb(0, 0, 0);">Community Information Service</span></a>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<div></div>
+<div class="downloadmessage no_external_url_indication">
+	<p>
+		Free viewers are required for some of the attached documents.<br />They can be downloaded by clicking on the icons below.
+	</p>
+    <a href="http://get.adobe.com/reader/" target="_blank" class="acrobat_reader_downloadmessage" title="Download Acrobat Reader">
+        <span>Acrobat Reader</span>
+        <img src="/DefaultContent/Default/_gfx/downloadmessage/acrobat.jpg" alt ="" />
+    </a>
+    <a href="http://www.adobe.com/products/flashplayer.html" target="_blank" class="flashplayer_downloadmessage" title="Download Flash Player">
+        <span>Flash Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/flash.jpg" alt=""/>
+    </a>
+    <a href="https://support.apple.com/downloads/quicktime" target="_blank" class="quicktime_downloadmessage" title="Download QuickTime">
+        <span>QuickTime</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/quicktime.jpg" alt=""/>
+    </a>
+    <a href="http://windows.microsoft.com/en-us/windows/windows-media-player" target="_blank" class="windows_media_player_downloadmessage" title="Download Windows Media Player">
+        <span>Windows Media Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/wmp.jpg" alt=""/>
+    </a>
+    <span class="line-breaker" style="display:none;"></span>
+    <a href="http://www.microsoft.com/getsilverlight/get-started/install/default.aspx" target="_blank" class="silverlight_downloadmessage" title="Download Microsoft Silverlight">
+        <span>Microsoft Silverlight</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/silverlight.jpg" alt=""/>
+    </a>
+    <a href="http://www.microsoft.com/en-us/download/details.aspx?id=4" target="_blank" class="word_downloadmessage" title="Download Word Viewer">
+        <span>Word Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/word.jpg" alt=""/>
+    </a>
+    <a href="http://www.microsoft.com/en-us/download/details.aspx?id=10" target="_blank" class="excel_downloadmessage" title="Download Excel Viewer">
+        <span>Excel Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/excel.jpg" alt=""/>
+    </a>
+    <a href="http://www.microsoft.com/en-us/download/details.aspx?id=6" target="_blank" class="powerpoint_downloadmessage" title="Download PowerPoint Viewer">
+        <span>PowerPoint Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/powerpoint.jpg" alt=""/>
+    </a>
+</div>
+
+
+
+
+
+</div>
+            <!--!!WidgetEnd-->
+
+    
+</div>
+
+        
+<aside id="ColumnUserControl5" class="column   small_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="461"WidgetStart!!-->
+<div id='widget_461_3464_3373' class='content_area normal_content_area clearfix  '></div>
+            <!--!!WidgetEnd-->
+
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="460"WidgetStart!!-->
+<div id='widget_460_3471_3373' class='content_area normal_content_area clearfix  '><p style="text-align: center;"><strong>Cecil County<br>
+Sheriff's Office<br>
+</strong><em>located at:</em><br>
+<a href="https://www.google.com/maps/place/107+Chesapeake+Blvd+%23112,+Elkton,+MD+21921/@39.6025319,-75.7897957,17z/data=!3m1!4b1!4m5!3m4!1s0x89c7a8a309920549:0x316ccdb24097aecf!8m2!3d39.6025319!4d-75.787607" target="_blank" class="tableData">107 Chesapeake Blvd.,<br>
+Suite. 112<br>
+Elkton, Maryland 21921</a><br>
+<br>
+<span style="color: rgb(255, 0, 0);">For Emergencies, Dial 911</span><br>
+410-996-5500<br>
+<br>
+Follow us on:<br>
+<a href="https://www.facebook.com/CecilSheriff" target="_blank" class="tableData"><img src="/Home/ShowImage?id=1258&t=636101293877670000" alt="fb logo" class="tableData" style="width: 40px; height: 42px; vertical-align: top;"></a>&nbsp;<a href="https://twitter.com/CecilSheriff" target="_blank" class="tableData"><img src="/Home/ShowImage?id=2316&t=636119549499270000" alt="Twitter-icon" class="tableData" style="width: 45px; height: 45px; vertical-align: top;"></a>&nbsp;&nbsp;<a href="https://www.instagram.com/cecilsheriff/" target="_blank" class="tableData"><img src="/Home/ShowImage?id=2318&t=636119549794600000" alt="instagram logo" class="tableData" style="width: 40px; height: 40px; vertical-align: top;"></a><br>
+<br>
+<a target="_blank" href="https://nextdoor.com/city/feed/13951575/?i=qhhkqszmrqpmhmnbaeff"><img src="https://d19rpgkrjeba2z.cloudfront.net/73ec53a/static/images/city/badges/nextdoor-badge-170.png" alt="Connect with us on Nextdoor"></a>
+</p>
+<table class="tableData" style="width: 100%;">
+    <tbody>
+        <tr>
+            <td class="tableData" style="text-align: center; vertical-align: top; background-color: rgb(0, 0, 0);"><span style="color: rgb(255, 255, 255);"><strong>ANNOUNCEMENTS</strong></span></td>
+        </tr>
+        <tr>
+            <td class="" style="text-align: center; vertical-align: top;"><em>Coming Soon!<br>
+            Look here for the latest<br>
+            Sheriff's Office news!&nbsp;</em></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table class="" style="width: 100%;">
+    <tbody>
+        <tr>
+            <td class="tableData" style="background-color: rgb(255, 0, 0); text-align: center;"><a href="http://www.oag.state.md.us/Opengov/Appendix_I.pdf" target="_blank"><strong><span style="color: rgb(255, 255, 255);">Attention:<br>
+            Public Information<br>
+            Act - 10/01/2015</span></strong></a><span style="color: rgb(255, 255, 255);"><br>
+            For more information,<br>
+            please contact<br>
+            </span><a href="mailto:&#115;&#104;&#101;&#114;&#114;&#121;&#108;&#46;&#99;&#104;&#117;&#114;&#99;&#104;&#64;&#99;&#99;&#100;&#112;&#115;&#46;&#111;&#114;&#103;"><strong><span style="color: rgb(255, 255, 0);">Sherryl Church</span></strong></a><span style="color: rgb(255, 255, 255);"><a href="mailto:&#115;&#104;&#101;&#114;&#114;&#121;&#108;&#46;&#99;&#104;&#117;&#114;&#99;&#104;&#64;&#99;&#99;&#100;&#112;&#115;&#46;&#111;&#114;&#103;"><strong></strong></a><br>
+            at 410-392-2113<br>
+            Cecil County Sheriff's Office<br>
+            107 Chesapeake Blvd.,<br>
+            Suite. 112,<br>
+            Elkton, Maryland 21921</span><br>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br></div>
+            <!--!!WidgetEnd-->
+
+    
+</aside>
+
+    </div>
+</div>
+
+
+        <footer id="page_footer" class="">
+            <!--stopindex-->
+            
+<div id="footercolumn" class="site_template_column  footer_column   " >
+
+                <!--stopindex-->
+                
+<div class="footer_nav">
+
+		<a href="/home" target="_self">Home</a>		
+		<a href="/services" target="_self">Services</a>		
+		<a href="/about-us" target="_self">About Us</a>		
+		<a href="/government" target="_self">Government</a>		
+		<a href="/residents" target="_self">Residents</a>		
+		<a href="/visitors" target="_self">Visitors</a>		
+		<a href="/businesses" target="_self">Businesses</a>		
+		<a href="/i-want-to" target="_self">I Want To...</a>		
+		<a href="/about-us/site-map" target="_self">Sitemap</a>		
+
+	
+</div>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<div class="social_icons">
+		<a href="https://www.facebook.com/Cecil-County-Maryland-119896931406055/" target="_blank" title="">
+			<img src="/Home/ShowImage?id=270&t=635905294550200000" alt="facebook" />
+		</a>
+</div>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                		<p class="footer_info">200 Chesapeake Blvd. Elkton, MD 21921<a href="/about-us/contact-directory-1673">Contact Us</a><a href="mailto:webmaster@ccgov.org" class="tableData">Webmaster</a></p>
+		<p class="footer_copyright">Website Created by <a class="vision_link" target="_blank" href="http://visioninternet.com/sitecredit">Vision Internet – Innovators of Online Government</a></p>
+
+                <!--startindex-->
+            
+
+</div>
+
+            <!--startindex-->
+        </footer>
+        <div id="view-options"><a href="javascript:void(0);" id="view-full" onclick="viewfullsite()" class="mobile_only">View Full Site</a></div>
+    </div>
+</div>
+
+<script src="/Project/Contents/Main/mobile_nav_scripts.js" type="text/javascript"></script>
+
+    
+
+    
+    <script>
+        $(function () {
+            $(".reComment[comment]").removeClass("reComment")
+                                    .removeAttr("comment")
+                                    .removeAttr("author")
+                                    .removeAttr("title")
+                                    .removeAttr("timestamp");
+        })
+    </script>
+    
+
+    
+
+    <script src="/Scripts/ScriptBundleVisionFrontend.jsbnd?v=ssdjXsB-GnjhWtD7xxfJTYSJvLTLMX-W3_Tgd4G8Uoc1"></script>
+
+
+    
+    
+    <script>
+        try { manualRenderMobile(); } catch (err) {}
+    </script>
+    
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T7JG59"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'userDataLayer', 'GTM-T7JG59');
+(function (window) {
+    var dataLayer = window.userDataLayer = window.userDataLayer || [];
+    dataLayer.push(
+        {"Env":"LIVE","SessionID":"k3nubhvhhgrxgjh2iviyagff","Identity":"0a232b29cff84738b82c89e53f4ff5e3","OrganizationName":"Cecil County","LoginUser":"","LoginUserType":"","LoginWebsiteUser":"","LoginMember":""}
+        );
+})(window)
+</script>
+<!-- End Google Tag Manager -->
+    <script src="/Scripts/ScriptBundleKendo.jsbnd?v=cEEdDEKkQvxYZlycCZrn6LHDJIkVHn_YmBnGahnPO0o1"></script>
+
+    <script src="/Scripts/Components/ScriptsFEBundle.jsbnd?v=VFH8jMxyZD0yGk1KoQzWyr3v9XLZc76VrAiOrX51Zk41"></script>
+
+    <script>
+        $(function() {
+            var sitewrapper = $(".sitewrapper");
+            if(sitewrapper.length && !sitewrapper.hasClass("")) {
+                sitewrapper.addClass("");
+            }
+        });
+    </script>
+
+    
+</body>
+</html>
