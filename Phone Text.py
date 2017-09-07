@@ -9,3 +9,4 @@ elif not s[0:3].isdecimal():
 elif s[3] == '-' and not s[7] == '-':
     print ("Not a Phone!")
 
+print("big booty bitches")
