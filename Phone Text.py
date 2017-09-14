@@ -1,13 +1,20 @@
-s = input("Enter a string to test: ")
+import requests
+import bs4
+import re
 
-if len(s) != 12:
-    print("Not a Phone!")
+r = requests.get("http://www.delawareonline.com")
 
-elif not s[0:3].isdecimal():
-    print("Not a Phone!")
-
-elif s[3] == '-' and not s[7] == '-':
-    print ("Not a Phone!")
-
-print("big booty bitches")
-("yeah")
+soup=bs4.BeautifulSoup(r.content,'html.parser')
+phoneNumberPattern = re.compile(r'\d\d\d\-\d\d\d-\d\d\d\d')
+s = str(soup)
+resultObject = phoneNumberPattern.search(s)
+try:
+    print("Phone number(s) found: ",resultObject.group())
+except:
+    print("No phone number found")
+'''
+print(soup.title)
+links =soup.find_all('a')
+for link in links:
+    print(link.get('href'))
+'''
